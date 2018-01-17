@@ -1,0 +1,138 @@
+.offer{
+  position: relative;
+  width: 100%;
+  max-width: 885px;
+  min-height: 530px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: $white;
+  margin-bottom: 60px;
+  @media (max-width: 640px){
+  min-height: 960px;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: $blue;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__header{
+    height: 34px;
+    padding: 0 11px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: $title;
+    @media (max-width: 500px) {
+      height: 68px;
+    }
+  }
+
+  &__container{
+    height: 100%;
+    padding: 0 11px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid $borderLine;
+    border-bottom: 1px solid $borderLine;
+  }
+  &__content{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  &__top{
+    width: 100%;
+    height: 16px;
+    @media (max-width: 640px){
+      height: 23px;
+    }
+  }
+  &__bottom{
+    width: 100%;
+    height: 20px;
+  }
+  &__text{
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 18px;
+    color: $text;
+    @media (max-width: 640px){
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__footer{
+    height: 38px;
+    padding: 0 11px 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @media (max-width: 640px) {
+      height: 65px;
+      justify-content: space-between;
+      @media (max-width: 310px) {
+        height: 38px;
+        padding: 0 5px 0 5px;
+      }
+    }
+  }
+  &__btn{
+    width: 160px;
+    height: 25px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: $blue;
+    font-size: 15px;
+    color: $white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include transition;
+    &:hover{
+      cursor: pointer;
+      background-color: $hoverBlue;
+    }
+    @media (max-width: 640px) {
+      width: 275px;
+      height: 45px;
+      font-size: 25px;
+      @media (max-width: 310px) {
+        width: 160px;
+        height: 25px;
+        font-size: 15px;
+      }
+    }
+
+    &--print{
+      width: 80px;
+      background-color: $gray;
+      &:last-of-type{
+        margin-right: 0;
+      }
+      &:hover{
+        background-color: $hoverGray;
+      }
+      @media (max-width: 640px) {
+        width: 142px;
+        height: 45px;
+        @media (max-width: 310px) {
+          width: 80px;
+          height: 25px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
