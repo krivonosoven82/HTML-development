@@ -387,10 +387,6 @@ body {
   transition: all 0.3s ease-in-out; }
   .info__ask:hover {
     background-color: #a2a7ae; }
-    .info__ask:hover .info__help {
-      display: block; }
-    .info__ask:hover .info__help--small {
-      display: block; }
 .info__help {
   position: absolute;
   top: -8px;

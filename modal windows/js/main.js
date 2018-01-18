@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('.info__help, .info__small').click(function(){
     $('.info__help, .info__small').fadeOut(100);
   });
-//----------click
+//---------- mouse click
   $('#askOne').click(function(){
     $('#helpOne, #rectOne').fadeToggle(100);
   });
@@ -33,7 +33,7 @@ $(document).ready(function(){
     $('#helpNine, #rectNine').fadeToggle(100);
   });
 
-  //----------mouse
+  //----------mouse move
   $("#one").mouseenter(function(){
           $('#helpOne, #rectOne').fadeIn(100);
       });

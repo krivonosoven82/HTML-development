@@ -96,7 +96,6 @@
       display: flex;
       flex-direction: column;
     }
-
     &__date{
       margin-right: 20px;
       @media(max-width: 370px){
@@ -133,6 +132,7 @@
       }
     }
 }
+//* * * * * * * * * * class - info
 .info{
   &__item{
     position: relative;
@@ -232,8 +232,6 @@
     @include transition;
     &:hover{
       background-color: $hoverAsk;
-      .info__help{display: block;}
-      .info__help--small{display: block;}
     }
   }
   &__help{
@@ -443,7 +441,7 @@
     }
   }
 }
-//----------desktop
+//---------- change class payment__subtitle from desktop to mobail
 .desktop{
   @media(max-width: 930px){
     display: none;
@@ -456,6 +454,7 @@
     font-family: 'Conv_Roboto-Bold';
   }
 }
+//---------- class - help - color
 .help{
   &__black{
     color: $black;
